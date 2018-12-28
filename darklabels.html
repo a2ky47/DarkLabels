@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dark Labels</title>
+    <meta name="description" content="groupMLWork">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="news">
+            <h1 id="title">THE DAILY AMERICAN</h1>
+        </div>
+        <hr>
+        <div class="wrap">
+            <div id="left">
+                <div class="container">
+                    <svg class="laser" height="10%" width="106%">
+                        <line x1="0%" y1="0" x2="100%" y2="0" style="stroke:rgb(50,205,50);stroke-width:4" />
+                    </svg>
+                    <video class="video">
+
+                    </video>
+                    <img src="" id="image"><br><br>
+
+                </div>
+
+
+
+                <div class="button">
+                    <div>
+                        <button id="btn" disabled>1-Snap Picture</button>
+                    </div>
+                    <div>
+                        <label class="fileinput">
+                            <input type="file" name="file" id="file" class="inputfile" style="opacity:10%;" />
+                            <span class="choose">2-Choose File</span>
+                        </label>
+
+                    </div>
+
+                    <div>
+                        <button type=button id="detect" onclick='getParam();display()'>Detect</button>
+
+                    </div>
+
+
+                </div>
+                <div>
+                    <table id="tableRes"></table>
+                </div>
+
+
+            </div>
+
+            <div id="right">
+                <p id="results_stats">
+                    The goal of this project is to highlight the negative stereotypes and effects that can come with
+                    being
+                    labeled. We use NYC Crime Data to show how people could potentially be seen through the eyes of the
+                    victim or suspect.
+                </p>
+                <hr>
+                <p id='results_stats'></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

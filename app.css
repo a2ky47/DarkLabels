@@ -1,0 +1,204 @@
+* {
+    color: white;
+    margin: 10px 20px;
+
+
+
+}
+
+body {
+    background-color: black;
+
+}
+
+.main {
+    width: 80%;
+    margin: 30px auto;
+    display: block;
+}
+
+canvas {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+h1 {
+    text-align: center;
+    display: block;
+}
+
+.news {
+    font-family: 'Archivo Black', sans-serif;
+
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+video {
+
+    width: 445px;
+
+    z-index: 10;
+    border: 3px solid #04f318;
+    margin-top: -35px;
+}
+
+
+.laser {
+    animation: scan 3s infinite linear;
+    z-index: 20;
+
+}
+
+.container {
+    height: 320px;
+
+}
+
+@keyframes scan {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 850%, 0);
+    }
+}
+
+
+
+#left {
+    float: left;
+    display: inline-block;
+    width: 45%;
+}
+
+#right {
+    float: right;
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+}
+
+hr {
+    display: none;
+}
+
+#results_stats {
+    font-size: 25px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    margin: 50px;
+    font-family: 'Archivo Black', sans-serif;
+
+
+}
+
+tr,
+th {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Archivo', sans-serif;
+
+}
+
+table {
+    margin-top: 100px;
+
+}
+
+#tableRes {
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+button {
+    border: 2px;
+    background-color: black;
+    color: rgb(54, 250, 4);
+    width: 300px;
+    height: 50px;
+    align-content: center;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2px;
+
+
+}
+
+#btn {
+    border: rgb(54, 250, 4) solid 1px;
+    font-size: 20px;
+    z-index: 10;
+}
+
+#file {
+    z-index: 10;
+    width: 298px;
+    height: 50px;
+}
+
+.fileinput {
+
+    border: rgb(54, 250, 4) solid 1px;
+    width: 298px;
+    height: 50px;
+}
+
+.fileinput,
+.fileinput input,
+.fileinput span {
+    display: relative;
+
+    float: left
+}
+
+.fileinput input {
+
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+.fileinput span {
+    text-align: center;
+    z-index: 10;
+    margin-top: -1%;
+
+}
+
+.choose {
+    color: rgb(54, 250, 4);
+    font-size: 20px;
+    padding-top: 16px;
+    padding-left: 50px;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2px;
+
+
+
+}
+
+#detect {
+    border: rgb(54, 250, 4) solid 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 20px;
+    z-index: 10;
+    display: none;
+
+}
+
+#image {
+    width: 445px;
+    border: 3px solid #04f318;
+
+}
